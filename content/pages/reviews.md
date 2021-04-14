@@ -1,5 +1,5 @@
 title: Review: Python Basics (4th Edition)
-date: 14 April 2021 July 12:31
+date: 14 April 2021 15:30
 
 The latest version of Python Basics by David Amos, Dan Bader, Joanna Jablonski and Fletcher Heisler was published last week. It has been updated to take advantage of recent versions of Python to 3.9 and is a fantastic resource for the beginner / advanced beginner. 
 
