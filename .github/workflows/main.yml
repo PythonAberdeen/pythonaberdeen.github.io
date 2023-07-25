@@ -9,12 +9,21 @@ on:
 
 jobs:
   build:
-
-    runs-on: ubuntu-20.04
-
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - uses: nelsonjchen/gh-pages-pelican-action@0.1.10
-      env:
-        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-        GH_PAGES_BRANCH: master
+      with:
+        path: master
+        ref: master
+    - uses: actions/checkout@v3
+      with:
+        path: content
+        ref: content
+    - run: |
+        cd content
+        pip install -r requirements.txt
+        pelican -o ../master -s pelicanconf.py
+        cd ../master
+        git config user.name github-actions
+        git config user.email github-actions@github.com
+        git add . && git commit -m "Build $(date)" && git push
