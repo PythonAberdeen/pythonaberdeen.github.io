@@ -20,7 +20,7 @@ jobs:
         ref: content
     - run: |
         cd content
-        pip install -r requirements.txt
+        pip install --break-system-packages -r requirements.txt
         pelican -o ../master -s pelicanconf.py
         cd ../master
         git config user.name github-actions
