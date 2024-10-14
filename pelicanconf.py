@@ -26,7 +26,7 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
 
 # Social widget
 SOCIAL = (('Twitter', 'http://twitter.com/pythonaberdeen'),
-          ('Slack', 'https://join.slack.com/t/codethecity/shared_invite/zt-ebfpmtdt-wMnHGebBCNJTCEInaYCwNw'),
+          ('Slack', 'https://bit.ly/join-ctc-slack'),
           ('github', 'http://github.com/pythonaberdeen'),)
 
 DEFAULT_PAGINATION = 5
